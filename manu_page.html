@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<center>
+<div class="w3-content w3-section" style="max-width:500px">
+<h2>Welcome to moms pickle</h2>
+
+  <img class="mySlides w3-animate-fading" src="7360.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="789556.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="45646464.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="AdobeStock_196719611.jpeg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+<br>
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+
+ background-color: yellow;
+
+
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+</style>
+
+<body>
+
+
+<button class="button button1" id="button9" onclick="nextPage2()"> Click on this button to see more Product </button>
+<script src="manu_page.js"></script>
+</body>
+</html>
+
+
+
+
+</center>
+</body>
+</html>
